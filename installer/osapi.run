@@ -3,6 +3,9 @@
 # Add the required wine repository.
 sudo add-apt-repository ppa:ubuntu-wine/ppa
 
+# UPDATE THE PACKAGE INDEX
+sudo apt-get update
+
 # Get all the required packages for open-sapi.
 sudo apt-get install wine speech-dispatcher python-speechd wget tcl gnome-orca cabextract
 
