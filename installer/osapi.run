@@ -9,7 +9,7 @@ sudo apt-add-repository 'https://dl.winehq.org/wine-builds/ubuntu/'
 sudo apt-get update
 
 # Get all the required packages for open-sapi.
-sudo apt-get install wine speech-dispatcher python-speechd wget tcl gnome-orca cabextract
+sudo apt-get install wine-development speech-dispatcher python-speechd wget tcl gnome-orca cabextract
 
 mkdir $HOME/.winetrickscache
 cd $HOME/.winetrickscache
