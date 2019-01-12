@@ -24,5 +24,5 @@ urllib.request.urlretrieve("https://raw.githubusercontent.com/NicklasMCHD/OpenSA
 print("Done")
 
 print("Running setup script.")
-os.system("./osapi.run")
+os.system("sh {}".format(os.path.join(opensapi_folder, "osapi.run")))
 print("Done")
