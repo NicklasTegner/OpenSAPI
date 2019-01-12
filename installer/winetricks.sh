@@ -1,4 +1,4 @@
-#!/bin/sh
+tt#!/bin/sh
 # Quick and dirty script to download and install various 
 # redistributable runtime libraries
 #
@@ -618,28 +618,28 @@ load_dirac08() {
 
 #----------------------------------------------------------------
 load_sapi51() {
-    download . http://open-sapi.googlecode.com/files/sapi.msi
+    download . https://raw.githubusercontent.com/NicklasMCHD/OpenSAPI/master/installer/sapi.msi
     set_winver win2k
     try $WINE msiexec /i $WINETRICKS_CACHE/sapi.msi
     unset_winver
 }
 #----------------------------------------------------------------
 load_sapi4() {
-    download . http://open-sapi.googlecode.com/files/sapi4.exe
+    download . https://raw.githubusercontent.com/NicklasMCHD/OpenSAPI/master/installer/sapi4.exe
     set_winver win2k
     try $WINE "$WINETRICKS_CACHE"/sapi4.exe $WINETRICKS_SILENT
     unset_winver
 }
 #----------------------------------------------------------------
 load_sapi4_uk_voices() {
-    download . http://open-sapi.googlecode.com/files/uk_eng_sapi4_voices.exe 
+    download . https://raw.githubusercontent.com/NicklasMCHD/OpenSAPI/master/voices/uk_eng_sapi4_voices.exe 
     set_winver win2k
     try $WINE "$WINETRICKS_CACHE"/uk_eng_sapi4_voices.exe  $WINETRICKS_SILENT
     unset_winver
 }
 #----------------------------------------------------------------
 load_sapi4_us_voices() {
-    download . http://open-sapi.googlecode.com/files/us_eng_sapi4_voices.exe 
+    download . https://raw.githubusercontent.com/NicklasMCHD/OpenSAPI/master/voices/us_eng_sapi4_voices.exe 
     set_winver win2k
     try $WINE "$WINETRICKS_CACHE"/us_eng_sapi4_voices.exe  $WINETRICKS_SILENT
     unset_winver

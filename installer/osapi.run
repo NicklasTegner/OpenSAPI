@@ -12,14 +12,14 @@ cd $HOME/.winetrickscache
 # Wine does not create it's directory structure/registry until its first run.
 # Winetricks fails unless this structure exisits first.
 
-wget http://open-sapi.googlecode.com/files/wineinit.exe
+wget https://raw.githubusercontent.com/NicklasMCHD/OpenSAPI/master/installer/wineinit.exe
 wine wineinit.exe
  
-wget http://open-sapi.googlecode.com/files/winetricks.sh
+wget https://raw.githubusercontent.com/NicklasMCHD/OpenSAPI/master/installer/winetricks.sh
 chmod 770 winetricks.sh
 ./winetricks.sh sapi51
 
-wget http://open-sapi.googlecode.com/files/msvcp60.dll
+wget https://raw.githubusercontent.com/NicklasMCHD/OpenSAPI/master/installer/msvcp60.dll
 cp -f msvcp60.dll $HOME/.wine/drive_c/windows/system32/
 rm -f *
 cd ..
